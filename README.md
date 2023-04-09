@@ -98,3 +98,23 @@ driver.Character:jump()
 ```lua
 driver.Character:reset()
 ```
+
+# API functions
+
+## Debugging infomation into the robloxdriver console
+```lua
+robloxdriver:debug("print","Hello, world") -- Prints 'Hello, world' into the console in green and white
+robloxdriver:debug("warn","Hello, world") -- Warns 'Hello, world' into the console in yellow and white
+robloxdriver:debug("error","Goodbye, world") -- Errors 'Goodbye, world' into the console in red and white and will shutdown the roblox process 5 seconds later.
+```
+
+## Converting characters to MSDN
+```lua
+local Example = robloxdriver:indentifyMSDN("A")
+local Example2 = robloxdriver:indentifyMSDN("B")
+local Example3 = robloxdriver:indentifyMSDN("C")
+
+print(Example) --> 0x41
+print(Example2) --> 0x42
+print(Example3) --> 0x43
+```
