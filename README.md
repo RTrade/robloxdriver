@@ -1,5 +1,5 @@
-# Orion Library
-This documentation is for the stable release of Orion Library.
+# robloxdriver
+This documentation is for the release of robloxdriver.
 
 ## Loading the robloxdriver
 ```lua
@@ -13,6 +13,28 @@ local robloxdriver = loadstring(game:HttpGet(('https://raw.githubusercontent.com
 local driver = robloxdriver:new()
 ```
 
+# Roblox automation
+</br>
+
+## Finding a GUI element
+```lua
+local element = driver:find_element("Test") -- Returns any GUI object witch has the same ImageId,PlaceholderText or text as inputted.
+--[[
+argument1 = <string> - The GUI object you wish to find.
+]]
+```
+
+## Clicking a GUI element
+```lua
+driver:click(element)
+```
+
+## Clicking our mouse
+```lua
+driver:click()
+```
+
+
 
 
 # character automation
@@ -21,11 +43,17 @@ local driver = robloxdriver:new()
 ## Making our character click a workspace element
 ```lua
 driver.Character:click_element(WORKSPACE_ELEMENT_HERE)
+--[[
+WORKSPACE_ELEMENT_HERE = <object> - The object you want to click
+]]
 ```
 
 ## Making our character touch a workspace element
 ```lua
 driver.Character:touch_element(WORKSPACE_ELEMENT_HERE)
+--[[
+WORKSPACE_ELEMENT_HERE = <object> - The object you want to click
+]]
 ```
 
 ## Making our character jump
