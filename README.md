@@ -15,7 +15,8 @@ local driver = robloxdriver:new()
 
 
 
-# character automation 
+# character automation
+</br>
 
 ## Making our character click a workspace element
 ```lua
