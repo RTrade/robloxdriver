@@ -62,7 +62,7 @@ argument2 = <string> - The text you want to input
 ```lua
 local ElementName = 'Money'
 local LocateAllElements = false
-local Element = driver:find_workspace_element(ElementName,LocateAllElements) -- Returns any GUI object witch has the same Name as inputted.
+local Element = driver:find_workspace_element(ElementName,LocateAllElements) -- Returns any workspace object witch has the same Name as inputted.
 
 --[[
 argument1 = <string>  - The workspace element you wish to find
