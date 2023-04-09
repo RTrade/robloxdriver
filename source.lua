@@ -127,8 +127,9 @@ function robloxdriver:new()
             keyrelease(0x20)
         end
     end
-
+    if rconsoleprint then
     rconsoleprint("")
+        end
     function driver:find_element(text)
         if typeof(text) == "string" then
             for i, v in pairs(player.PlayerGui:GetDescendants()) do
