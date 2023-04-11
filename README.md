@@ -3,7 +3,7 @@ This documentation is for the release of robloxdriver.
 
 ## Loading the robloxdriver
 ```lua
-local robloxdriver = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local robloxdriver = loadstring(game:HttpGet(('https://raw.githubusercontent.com/RTrade/robloxdriver/main/source.lua')))()
 ```
 
 
